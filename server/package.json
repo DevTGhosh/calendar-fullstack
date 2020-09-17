@@ -1,0 +1,42 @@
+{
+  "name": "calendar-server",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src --out-dir build --copy-files",
+    "start": "node build/index.js",
+    "restart": "rimraf build && npm run build && npm run start",
+    "dev": "NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "pre-commit": "lint-staged"
+  },
+  "author": "Devjyoti Ghosh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "lint-staged": "^10.4.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --fix",
+      "prettier --write"
+    ]
+  }
+}

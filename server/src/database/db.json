@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Install New Router",
+    "startDate": 1600021800,
+    "endDate": 1600241340,
+    "id": "91c281a0-df8f-4121-8717-7f9d87f10edd",
+    "allDay": false,
+    "user": "User 2"
+  },
+  {
+    "title": "Go to movies",
+    "startDate": 1600281000,
+    "endDate": 1600288200,
+    "id": "73211393-a696-4cea-946a-06f88e070550",
+    "allDay": false,
+    "user": "User 1"
+  },
+  {
+    "title": "Complete Calendar App",
+    "startDate": 1600282800,
+    "endDate": 1600284600,
+    "id": "11c26eea-1ea5-48b2-8474-bb270def89a7",
+    "allDay": false,
+    "user": "User 3"
+  }
+]
