@@ -8,6 +8,7 @@ Project was created with Next JS, Material UI, Redux, React-Scheduler, Express &
 
 - Changed the architecture of the app to have different package.json for client and server
 - Added a root package.json that can be used to run both client and server directly
+- Changed the route handling for `patch` and `delete` events
 - Added pre-commit linting and formatting rules for both client & server
 
 # How to run this App
